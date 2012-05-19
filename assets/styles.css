@@ -34,7 +34,7 @@ ul.materials .span2 {
   min-height: 200px;
 }
 
-#my_design_materials, #available_materials {
+#added_materials, #available_materials {
   height: 480px;
   overflow-y: scroll;
 }
