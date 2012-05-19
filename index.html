@@ -93,14 +93,14 @@
         </div>
         
         
-        <div id="my_design_materials" class="span2 padding1">
+        <div id="my_design_materials" class="span2 padding1 light-bkg">
           <ul id="added_materials" class="thumbnails materials">
 
           </ul>
         </div>
         
         
-        <div id="available_materials" class="span4 padding1">
+        <div id="available_materials" class="span4 padding1 light-bkg">
           <ul class="thumbnails materials">
 
           </ul>
@@ -121,9 +121,9 @@
     <script src="assets/calc.js"></script>
 
     <script id="material" type="text/html">
-      <li class="draggable_material span2" id="material_{{ Material.id }}">
+      <li class="draggable_material material span2" id="material_{{ Material.id }}">
         <div class="thumbnail">
-          <img src="images/materials/{{ Material.id }}.jpg" alt="">
+          <div class="placeholder"><div class="img" style="background-image:url(images/materials/{{ Material.id }}.jpg)"></div></div>
           <div class="caption">
             <h5>{{ Material.name }}</h5>
           </div>

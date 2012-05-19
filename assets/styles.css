@@ -1,12 +1,9 @@
 
-.show-grid [class*="span"] {
+.light-bkg {
   background-color: #EEE;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-
-  min-height: 30px;
-  line-height: 30px;
 }
 
 .materials.thumbnails li {
@@ -37,3 +34,19 @@ ul.materials .span2 {
   min-height: 200px;
 }
 
+#my_design_materials, #available_materials {
+  height: 480px;
+  overflow-y: scroll;
+}
+
+.material .thumbnail .placeholder {
+  margin: 0 auto;
+  width: 120px;
+  height: 100px;
+  background-image: url(http://placehold.it/120x100);
+}
+.material .thumbnail .img {
+  margin: 0 auto;
+  width: 120px;
+  height: 100px;
+}
