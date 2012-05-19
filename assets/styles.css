@@ -13,12 +13,19 @@
   background-color: #ffffff;
 }
 
-.padding1 .materials {
+.padding1 ul.materials {
   margin-right: 5px;
-  margin-left: -25px;
+  margin-left: -5px;
   margin-top: 5px;
 }
+.padding1.span4 ul.materials {
+  margin-left: 14px;
+}
 
-.materials .span2 {
+.padding1 ul.materials li {
+  margin-left: 15px;
+}
+
+ul.materials .span2 {
   width: 150px;
 }
