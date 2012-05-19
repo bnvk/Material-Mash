@@ -25,5 +25,13 @@ $(document).ready(function()
 		
 	});
 	
+
+	$.getJSON("data.json", function(data){
+		for(var i in data.data) {
+			var m = data.data[i];
+			console.debug(m);
+			$("#available_materials .materials").append(ich.material(m));
+		}
+	});
 		
 });

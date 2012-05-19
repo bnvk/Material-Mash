@@ -74,7 +74,7 @@
       <div class="row show-grid">
               
         <div id="my_design" class="span6">
-		  <img src="images/tshirt_template.jpg" width="475">
+		      <img src="images/tshirt_template.jpg" width="475">
         </div>
         
         
@@ -87,30 +87,7 @@
         
         <div id="available_materials" class="span4 padding1">
           <ul class="thumbnails materials">
-             <li class="draggable_material span2">
-              <div class="thumbnail">
-                <img src="images/materials/leather.jpg" alt="">
-                <div class="caption">
-                  <h5>Leather (US)</h5>
-                </div>
-              </div>
-            </li>
-            <li class="draggable_material span2">
-              <div class="thumbnail">
-                <img src="images/materials/linen.jpg" alt="">
-                <div class="caption">
-                  <h5>Linen</h5>
-                </div>
-              </div>
-            </li>
-            <li class="draggable_material span2">
-              <div class="thumbnail">
-                <img src="images/materials/nylon.jpg" alt="">
-                <div class="caption">
-                  <h5>Nylon</h5>
-                </div>
-              </div>
-            </li>
+
           </ul>
         </div>
 
@@ -125,6 +102,19 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="jquery-ui/jquery-ui-1.8.20.custom.min.js"></script>
     <script src="assets/application.js"></script>   
+    <script src="assets/ICanHaz.min.js"></script>
     <script src="assets/calc.js"></script>
+
+    <script id="material" type="text/html">
+      <li class="draggable_material span2" id="material_{{ Material.id }}">
+        <div class="thumbnail">
+          <img src="images/materials/{{ Material.id }}.jpg" alt="">
+          <div class="caption">
+            <h5>{{ Material.name }}</h5>
+          </div>
+        </div>
+      </li>
+    </script>
+
   </body>
 </html>
