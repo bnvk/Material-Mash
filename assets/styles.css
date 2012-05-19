@@ -29,7 +29,7 @@ ul.materials .span2 {
 
 
 
-#added_materials {
+#added_materials_list {
   width: 100%;
   min-height: 200px;
 }
@@ -37,6 +37,15 @@ ul.materials .span2 {
 #my_design_materials, #available_materials {
   height: 480px;
   overflow-y: scroll;
+}
+
+#drag_to_add { 
+  margin-top: 60px;
+  background: #eeeeee;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
 }
 
 .material .thumbnail .placeholder {
@@ -50,3 +59,27 @@ ul.materials .span2 {
   width: 120px;
   height: 100px;
 }
+
+/* Total Values */
+#total_values {
+  margin-top: 30px;
+}
+
+#total_values td {
+  width: 100px;
+}
+
+#total_values th {
+  width: 100px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 24px; 
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+
+.total_value {
+  font-size: 72px;
+}
+
+
