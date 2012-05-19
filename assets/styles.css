@@ -8,3 +8,17 @@
   min-height: 30px;
   line-height: 30px;
 }
+
+.materials.thumbnails li {
+  background-color: #ffffff;
+}
+
+.padding1 .materials {
+  margin-right: 5px;
+  margin-left: -25px;
+  margin-top: 5px;
+}
+
+.materials .span2 {
+  width: 150px;
+}
