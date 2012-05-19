@@ -1,0 +1,10 @@
+
+.show-grid [class*="span"] {
+  background-color: #EEE;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  min-height: 30px;
+  line-height: 30px;
+}
