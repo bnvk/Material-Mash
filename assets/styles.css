@@ -37,3 +37,12 @@ ul.materials .span2 {
   min-height: 200px;
 }
 
+.material .thumbnail .img {
+  width: 120px;
+  height: 100px;
+}
+
+.material .thumbnail .placeholder {
+  background-image: url(http://placehold.it/120x100);
+}
+

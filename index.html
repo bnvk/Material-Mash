@@ -115,9 +115,9 @@
     <script src="assets/calc.js"></script>
 
     <script id="material" type="text/html">
-      <li class="draggable_material span2" id="material_{{ Material.id }}">
+      <li class="draggable_material material span2" id="material_{{ Material.id }}">
         <div class="thumbnail">
-          <img src="images/materials/{{ Material.id }}.jpg" alt="">
+          <div class="placeholder"><div class="img" style="background-image:url(images/materials/{{ Material.id }}.jpg)"></div></div>
           <div class="caption">
             <h5>{{ Material.name }}</h5>
           </div>
