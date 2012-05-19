@@ -14,12 +14,14 @@ $(document).ready(function()
 		hoverClass	: 'occurrence_participants_active',
 		drop 		: function(event, ui)
 		{
-			var material = ui.draggable.html();
+			var material_id		= ui.draggable.attr('id'); 
+			var material_html	= ui.draggable.html();
 	
 			console.log(material);
+			
+			
 	
-	
-			$(this).append(material);
+			$(this).append(material_html);
 	
 		}
 		
