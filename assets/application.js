@@ -1,3 +1,5 @@
+var AllMaterials = [];
+
 $(document).ready(function()
 {
 
@@ -13,15 +15,17 @@ $(document).ready(function()
 			var material_id		= ui.draggable.attr('id'); 
 			var material_html	= ui.draggable.html();
 	
-			$(this).append("<li class='span2 material'>"+material_html+"</li>");
+			$(this).append("<li class='span2 material' data-material-id='"+material_id.split("_")[1]+"'>"+material_html+"</li>");
+
+			recalculateTotals();
 		}
-		
 	});
 	
 
 	$.getJSON("data.json", function(data){
 		for(var i in data.data) {
 			var m = data.data[i];
+			AllMaterials[m.Material.id] = m;
 			$("#available_materials .materials").append(ich.material(m));
 		}
 
@@ -30,3 +34,22 @@ $(document).ready(function()
 	});
 		
 });
+
+function recalculateTotals() {
+	var totalMaterials = $("#added_materials li").length;
+
+	var materials = [];
+	$("#added_materials li").each(function(i,e){
+		var materialID = $(e).data("material-id");
+		materials.push({
+			Material: AllMaterials[materialID].Material,
+			Makeup: (1/totalMaterials)
+		});
+	});
+	var result = MaterialCalculator.calculate(materials);
+	$("#recycled_value").html(Math.round(result.recyclable * 100));
+	$("#organic_value").html(Math.round(result.organic * 100));
+	$("#toxicity_value").html(Math.round(result.chemistry_total));
+	$("#msi_value").html(Math.round(result.total_score));
+
+}

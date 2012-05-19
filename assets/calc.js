@@ -1,41 +1,3 @@
-var materials = [];
-
-materials.push({
-  Material: {
-    id: "4",
-    name: "Carbon fiber",
-    chemistry_total: "16.40",
-    egei_total: "0.00",
-    water_land_intensity_total: "9.00",
-    physical_waste_total: "11.30",
-    total_score: "36.70",
-    recyclable: false,
-    organic: true
-  },
-  Makeup: 0.2
-});
-
-materials.push({
-  Material: {
-    id: "1",
-    name: "Acrylic fabric",
-    chemistry_total: "7.80",
-    egei_total: "6.30",
-    water_land_intensity_total: "9.00",
-    physical_waste_total: "18.30",
-    total_score: "41.30",
-    recyclable: true,
-    organic: false
-  },
-  Makeup: 0.8
-});
-
-(16 * 0.2) + (7 * 0.8)
-
-
-
-console.debug(materials);
-
 
 var MaterialCalculator = {
   calculate: function(materials) {
@@ -64,4 +26,3 @@ var MaterialCalculator = {
   }
 };
 
-console.debug(MaterialCalculator.calculate(materials));
