@@ -13,7 +13,7 @@ $(document).ready(function()
 			var material_id		= ui.draggable.attr('id'); 
 			var material_html	= ui.draggable.html();
 	
-			$(this).append("<li class='span2 material'>"+material_html+"</li>");
+			$('#added_materials_list').prepend("<li class='span2 material'>"+material_html+"</li>");
 		}
 		
 	});

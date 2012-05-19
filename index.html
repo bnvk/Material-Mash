@@ -40,7 +40,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#">Material Mash</a>
-<!--           <div class="nav-collapse">
+<!--       <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -74,9 +74,8 @@
       <div class="row show-grid">
               
         <div id="my_design" class="span6">
-    		  <img src="images/tshirt_template.jpg" width="475">
-
-          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    	  <img src="images/tshirt_template.jpg" width="475">
+          <table id="total_values" cellpadding="0" cellspacing="0" border="0" width="100%">
           <tr>
       		<th>Recycled Content</th>    
       		<th>Organic Content</th>    
@@ -84,18 +83,17 @@
       		<th>MSI Score</th>
           </tr>
           <tr>
-          	<td><span id="recycled_value">2</span>%</td>
-          	<td><span id="organic_value">39</span>%</td>
-          	<td><span id="toxicity_value">39</span>%</td>
-          	<td><span id="msi_value">68</span></td>
+          	<td><span class="total_value" id="recycled_value">2</span>%</td>
+          	<td><span class="total_value" id="organic_value">39</span>%</td>
+          	<td><span class="total_value" id="toxicity_value">39</span>%</td>
+          	<td><span class="total_value" id="msi_value">68</span></td>
           </tr>
           </table>
         </div>
         
-        
-        <div id="my_design_materials" class="span2 padding1 light-bkg">
-          <ul id="added_materials" class="thumbnails materials">
-
+        <div id="added_materials" class="span2 padding1 light-bkg">
+          <ul id="added_materials_list" class="thumbnails materials">
+			<li id="drag_to_add">drag to add materials</li>
           </ul>
         </div>
         
