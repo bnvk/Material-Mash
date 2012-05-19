@@ -53,46 +53,67 @@
     </div>
 
     <div class="container">
-      <div class="row show-grid">
+
+      <div class="row">
+       
         <div class="span6">
+          <h1>Your Design</h1>
+		</div>
+       
+        <div class="span2">
+		  <h1>Chosen</h1>
+		</div>		
 
+        <div class="span4">
+	 	  <h1>Materials</h1>
+	 	</div>	
+	 		
+	  </div>
+	  <p>&nbsp;</p>
+
+      <div class="row show-grid">
+              
+        <div id="my_design" class="span6">
+		  <img src="images/tshirt_template.jpg" width="475">
         </div>
-        <div class="span2 padding1">
+        
+        
+        <div id="my_design_materials" class="span2 padding1">
+          <ul id="added_materials" class="thumbnails materials">
 
+          </ul>
+        </div>
+        
+        
+        <div id="available_materials" class="span4 padding1">
           <ul class="thumbnails materials">
-            <li class="span2">
+             <li class="draggable_material span2">
               <div class="thumbnail">
-                <img src="http://placehold.it/120x100" alt="">
+                <img src="images/materials/leather.jpg" alt="">
                 <div class="caption">
-                  <h5>Thumbnail label</h5>
+                  <h5>Leather (US)</h5>
+                </div>
+              </div>
+            </li>
+            <li class="draggable_material span2">
+              <div class="thumbnail">
+                <img src="images/materials/linen.jpg" alt="">
+                <div class="caption">
+                  <h5>Linen</h5>
+                </div>
+              </div>
+            </li>
+            <li class="draggable_material span2">
+              <div class="thumbnail">
+                <img src="images/materials/nylon.jpg" alt="">
+                <div class="caption">
+                  <h5>Nylon</h5>
                 </div>
               </div>
             </li>
           </ul>
-
         </div>
-        <div class="span4 padding1">
 
-          <ul class="thumbnails materials">
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/120x100" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                </div>
-              </div>
-            </li>
-            <li class="span2">
-              <div class="thumbnail">
-                <img src="http://placehold.it/120x100" alt="">
-                <div class="caption">
-                  <h5>Thumbnail label</h5>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-        </div>
 
       </div>
     </div> <!-- /container -->
