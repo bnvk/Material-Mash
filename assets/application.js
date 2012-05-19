@@ -15,7 +15,7 @@ $(document).ready(function()
 			var material_id		= ui.draggable.attr('id'); 
 			var material_html	= ui.draggable.html();
 	
-			$('#added_materials_list').append("<li class='span2 material' data-material-id='"+material_id.split("_")[1]+"'>"+material_html+"</li>");
+			$('#added_materials_list').prepend("<li class='span2 material' data-material-id='"+material_id.split("_")[1]+"'>"+material_html+"</li>");
 			recalculateTotals();
 		}
 	});
@@ -38,7 +38,7 @@ function recalculateTotals() {
 	var totalMaterials = $("#added_materials li").length;
 
 	var materials = [];
-	$("#added_materials li").each(function(i,e){
+	$("#added_materials li.material").each(function(i,e){
 		var materialID = $(e).data("material-id");
 		materials.push({
 			Material: AllMaterials[materialID].Material,
