@@ -29,3 +29,10 @@
 ul.materials .span2 {
   width: 150px;
 }
+
+
+
+#added_materials {
+  width: 100%;
+  min-height: 200px;
+}
