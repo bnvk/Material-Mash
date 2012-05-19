@@ -1,10 +1,6 @@
 $(document).ready(function()
 {
 
-	// Draggable Materials
-	$('.draggable_material').draggable({ opacity: 0.6, helper: 'clone', revert: 'invalid' });
-
-
 	// Target Drop Spot
 	$('#added_materials').droppable(
 	{
@@ -17,12 +13,7 @@ $(document).ready(function()
 			var material_id		= ui.draggable.attr('id'); 
 			var material_html	= ui.draggable.html();
 	
-			console.log(material);
-			
-			
-	
-			$(this).append(material_html);
-	
+			$(this).append("<li class='span2'>"+material_html+"</li>");
 		}
 		
 	});
@@ -31,9 +22,11 @@ $(document).ready(function()
 	$.getJSON("data.json", function(data){
 		for(var i in data.data) {
 			var m = data.data[i];
-			console.debug(m);
 			$("#available_materials .materials").append(ich.material(m));
 		}
+
+		// Draggable Materials
+		$('.draggable_material').draggable({ opacity: 0.6, helper: 'clone', revert: 'invalid' });
 	});
 		
 });
